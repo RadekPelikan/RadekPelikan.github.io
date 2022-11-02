@@ -6,8 +6,8 @@ import { BlogPage, HomePage, NotesPage } from "./pages";
 function App() {
   return (
     <BrowserRouter>
-      <Nav />
-      <div className="container mx-auto mt-5 flex justify-center">
+      {/* <Nav /> */}
+      <div className="container mx-auto pt-20 lg:px-52">
         <Routes>
           <Route index element={<HomePage />} />
           <Route path="/blog" element={<BlogPage />} />

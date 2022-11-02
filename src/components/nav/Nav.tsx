@@ -9,12 +9,12 @@ const items = [
 const Nav = () => {
   return (
     <div className="flex justify-between px-4">
-      <Link to="/">
-        <h2>Ráďův ósm web</h2>
+      <Link to="/" className="text-xl">
+        Ráďův ósm web
       </Link>
       <div className="flex gap-6">
         {items.map((item, i) => (
-          <Link to={item.path} key={i}>
+          <Link to={item.path} key={i} className="text-xl">
             {item.title}
           </Link>
         ))}
