@@ -7,3 +7,24 @@
 * {
   font-family: "Work Sans", sans-serif;
 }
+
+.sliding-show {
+  animation: 23s infinite linear slideLeft;
+}
+
+.sliding-show a {
+  transition: color 500ms;
+}
+
+.sliding-show a:hover {
+  color: red;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(25%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
