@@ -26,7 +26,7 @@ const HomePage = () => {
             <span className="mr-5">My name is</span>
             <span className="text-4xl">Radek Pelikán</span>
           </p>
-          <p className="text-xl mt-3 flex flex-col xl:flex-row">
+          <p className="text-xl mt-3 flex flex-col md:flex-row">
             <span>Current location:</span>
             <span>
               Czech republic
@@ -64,7 +64,7 @@ const HomePage = () => {
           </p>
         </div>
       </div>
-      <div className="max-w-2xl text-8xl whitespace-nowrap overflow-x-hidden mx-auto">
+      <div className="max-w-xl text-8xl whitespace-nowrap overflow-x-hidden mx-auto">
         <div className="relative sliding-show w-fit">
           <a href="https://nodejs.org" target="_blank">
             <FaNodeJs className="inline" />
