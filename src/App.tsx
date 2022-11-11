@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Nav from "./components/nav/Nav";
-import { BlogPage, HomePage, NotesPage } from "./pages";
+import { BlogPage, HomePage, NotesPage, NotFoundPage } from "./pages";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/notes" element={<NotesPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
     </HashRouter>
