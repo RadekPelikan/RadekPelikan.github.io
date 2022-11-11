@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Nav from "./components/nav/Nav";
 import { BlogPage, HomePage, NotesPage } from "./pages";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       {/* <Nav /> */}
       <div className="container mx-auto pt-20 lg:px-52">
         <Routes>
@@ -14,7 +14,7 @@ function App() {
           <Route path="/notes" element={<NotesPage />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
